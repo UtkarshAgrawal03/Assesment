@@ -6,6 +6,7 @@ public class WelcomePage {
 		BusPurpose obj=new BusPurpose();
 		System.out.println("                 LOCKEDME                   ");
 		System.out.println("           Welcome to LockedMe              ");
+		System.out.println("Developed and Maintened by UTKARSH AGRAWAL");
 		obj.menu();
 		System.out.println("Developed and Maintened by UTKARSH AGRAWAL");
 		System.out.println("To contact-bhanuishu03@gmail.com");

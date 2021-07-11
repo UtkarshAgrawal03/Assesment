@@ -24,7 +24,7 @@ public class busFunctions {
 		System.out.println("Enter the name of the file to be searched");
 		String sName=sc.next();
 		boolean cont=AllFiles.contains(sName);
-		System.out.println("Contains File "+sName+" "+cont);
+		System.out.println("File Found "+sName+" "+cont);
 	}
 	void delete() {
 		System.out.println("Enter the File name to be deleted");
@@ -32,14 +32,22 @@ public class busFunctions {
 		File f1=new File(fname);
 		boolean del=f1.delete();
 		AllFiles.remove(fname);
+		if(del ==true)
 		System.out.println("File Deleted "+fname+" "+del);
+		else
+			System.out.println("File Not Found");
 		
 	}
 	void display() {
 		AllFiles.sort(null);
+		int c=0;
 		for(String s:AllFiles) {
+			c=1;
 			System.out.print("\t"+s);
 		}
+		if(c==0)
+			System.out.println("N0 file to display");
+		
 		System.out.println();
 	}
 

@@ -17,10 +17,10 @@ public class BusPurpose {
 				       break;
 				case 2:while(b>0) {
 					System.out.println("Bussiness level Operations");
-					System.out.println("Press 1 to-Add a user specified file to the application");
-					System.out.println("Press 2 to-Delete a user specified file from the application");
-					System.out.println("Press 3 to-Search a user specified file from the application");
-					System.out.println("Press 4 to-Return back to main menu");
+					System.out.println("\tPress 1 to-Add a user specified file to the application");
+					System.out.println("\tPress 2 to-Delete a user specified file from the application");
+					System.out.println("\tPress 3 to-Search a user specified file from the application");
+					System.out.println("\tPress 4 to-Return back to main menu");
 					int ch2=sc.nextInt();
 					switch(ch2) {
 							case 1:o1.Add();
